@@ -63,5 +63,7 @@
     <string name="line">line</string>
     <string name="orders">Orders</string>
     <string name="wallet">Wallet</string>
+    <string name="booking_plans"><![CDATA[Booking & plans]]></string>
+    <string name="help1">Help</string>
 
 </resources>

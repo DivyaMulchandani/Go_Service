@@ -6,9 +6,40 @@
     tools:context=".OrderFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Order" />
+        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/booking"
+            android:layout_width="116dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="269dp"
+            android:text="@string/booking_plans"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/help"
+            android:layout_width="61dp"
+            android:layout_height="48dp"
+            android:textAllCaps="false"
+            android:text="@string/help1"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="316dp"
+            android:background="@color/white"
+            android:textColor="#6E4CCD"
+            />
+
+        <ImageView
+            android:id="@+id/line14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/line14"
+            />
+    </RelativeLayout>
 </FrameLayout>
