@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        >
+
+        <ScrollView
+            android:id="@+id/main_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="844dp">
+
+                <ImageView
+                    android:id="@+id/map_pin"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="116dp"
+                    android:contentDescription="@string/drop_pin"
+                    android:src="@drawable/mappin" />
+
+                <TextView
+                    android:id="@+id/home"
+                    android:layout_width="55dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="107dp"
+                    android:text="@string/home"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/polygon_1"
+                    android:layout_width="9dp"
+                    android:layout_height="9dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="117dp"
+                    android:layout_toRightOf="@+id/home"
+                    android:background="@drawable/tri_background"
+                    android:contentDescription="@string/polygon"
+                    android:rotation="180"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/cur_loc"
+                    android:layout_width="95dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/home"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/current_location"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/ellipse_profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="310dp"
+                    android:layout_marginTop="109dp"
+                    android:layout_toRightOf="@+id/map_pin"
+                    android:background="@drawable/ellipse_1"
+                    android:contentDescription="@string/ellipse"
+                    android:src="@drawable/ellipse" />
+
+                <EditText
+                    android:id="@+id/rectangle_1"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/ellipse_profile"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rect_background"
+                    android:hint="@string/search"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="10.19dp"
+                    android:paddingEnd="10.71dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="11sp" />
+
+                <ImageButton
+                    android:id="@+id/search"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_below="@+id/ellipse_profile"
+                    android:layout_marginLeft="360dp"
+                    android:layout_marginTop="29dp"
+                    android:contentDescription="@string/search_icon"
+                    android:src="@drawable/search"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <View
+                    android:id="@+id/rectangle_2"
+                    android:layout_width="411dp"
+                    android:layout_height="7dp"
+                    android:layout_below="@+id/rectangle_1"
+                    android:layout_marginTop="48dp"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:id="@+id/services"
+                    android:layout_width="85dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/rectangle_2"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/services"
+                    android:textColor="#D9000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll_services"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/services"
+                    android:layout_marginTop="13dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/img_button_1"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/background"
+                                android:contentDescription="@string/ac_image"
+                                android:src="@drawable/ac" />
+
+                            <TextView
+                                android:id="@+id/a_c_service"
+                                android:layout_width="141dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/a_c_service_and_repair"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/img_button_2"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/background"
+                                android:backgroundTint="@color/white"
+                                android:contentDescription="@string/refrigerator_service_and_repair"
+                                android:src="@drawable/refrigerator" />
+
+                            <TextView
+                                android:id="@+id/refrigerator"
+                                android:layout_width="141dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/refrigerator_service_and_repair"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/img_button_3"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/background"
+                                android:contentDescription="@string/washing_machine_service_and_repair"
+                                android:src="@drawable/washing" />
+
+                            <TextView
+                                android:id="@+id/washing"
+                                android:layout_width="141dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/washing_machine_service_and_repair"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/img_button_4"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/background"
+                                android:contentDescription="@string/microwave_service_amp_repair"
+                                android:src="@drawable/microwave" />
+
+                            <TextView
+                                android:id="@+id/microwave"
+                                android:layout_width="141dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/microwave_service_amp_repair"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="14dp"
+                            android:orientation="vertical">
+
+                            <ImageButton
+                                android:id="@+id/img_button_5"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:background="@drawable/background"
+                                android:contentDescription="@string/geyser_repair_amp_service"
+                                android:src="@drawable/geyser" />
+
+                            <TextView
+                                android:id="@+id/geyser"
+                                android:layout_width="141dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="5dp"
+                                android:text="@string/geyser_repair_amp_service"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/rectangle_3"
+                    android:layout_width="411dp"
+                    android:layout_height="7dp"
+                    android:layout_below="@+id/scroll_services"
+                    android:layout_marginTop="13dp"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:id="@+id/offers"
+                    android:layout_width="61dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/rectangle_3"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="13dp"
+                    android:text="@string/offers"
+                    android:textColor="#D9000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll_offers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offers"
+                    android:layout_marginTop="13dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/offer_1"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="14dp"
+                            android:background="@drawable/background"
+                            android:contentDescription="@string/offers"
+                            android:src="@drawable/offer_1" />
+
+                        <ImageButton
+                            android:id="@+id/offer_2"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/background"
+                            android:contentDescription="@string/offers"
+                            android:src="@drawable/offer_2" />
+
+                        <ImageButton
+                            android:id="@+id/offer_3"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/background"
+                            android:contentDescription="@string/offers"
+                            android:src="@drawable/offer_3" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/rectangle_4"
+                    android:layout_width="411dp"
+                    android:layout_height="7dp"
+                    android:layout_below="@+id/scroll_offers"
+                    android:layout_marginTop="13dp"
+                    android:background="#D9D9D9"
+                    android:contentDescription="@string/rectangle" />
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rectangle_4"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/refer_and_g"
+                        android:layout_width="148dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/refer_and_get_free_services"
+                        android:textAlignment="center"
+                        android:textColor="#D9000000"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/gift"
+                        android:layout_width="134dp"
+                        android:layout_height="82dp"
+                        android:layout_marginLeft="110dp"
+                        android:contentDescription="@string/gift"
+                        android:src="@drawable/gift" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
