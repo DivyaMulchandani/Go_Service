@@ -25,7 +25,7 @@
                 android:layout_height="16dp"
                 android:layout_marginStart="13dp"
                 android:layout_marginTop="18dp"
-                android:text="Total Wallet Balance"
+                android:text="@string/total_wallet_balance"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -46,7 +46,7 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="47dp"
                 android:layout_toRightOf="@+id/rupee"
-                android:text="100"
+                android:text="@string/amount"
                 android:textColor="@color/black"
                 android:textSize="13sp" />
 
@@ -66,7 +66,7 @@
                 android:layout_marginLeft="31dp"
                 android:layout_marginTop="43dp"
                 android:background="@drawable/transparent_bg"
-                android:contentDescription="qr button"
+                android:contentDescription="@string/qr_button"
                 android:src="@drawable/qr_button"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -78,7 +78,7 @@
                 android:layout_marginTop="102dp"
                 android:layout_toRightOf="@+id/qr_button"
                 android:background="@drawable/transparent_bg"
-                android:contentDescription="gift button"
+                android:contentDescription="@string/gift_button"
                 android:src="@drawable/gift1"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -90,7 +90,7 @@
                 android:layout_marginTop="102dp"
                 android:layout_toRightOf="@+id/gift_button"
                 android:background="@drawable/transparent_bg"
-                android:contentDescription="plus button"
+                android:contentDescription="@string/plus_button"
                 android:src="@drawable/plus1"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -111,7 +111,7 @@
                 android:layout_height="17dp"
                 android:layout_marginLeft="13dp"
                 android:layout_marginTop="10dp"
-                android:text="Payment Option"
+                android:text="@string/payment_option"
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold" />
@@ -125,7 +125,7 @@
                 android:layout_marginTop="20dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/creditcard"
-                android:text="Debit and Credit Cards"
+                android:text="@string/debit_and_credit_cards"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="#424949"
@@ -149,7 +149,7 @@
                 android:layout_marginTop="12dp"
                 android:backgroundTint="@color/white"
                 android:drawableEnd="@drawable/upi"
-                android:text="UPI"
+                android:text="@string/upi"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="#424949"
