@@ -5,10 +5,42 @@
     android:layout_height="match_parent"
     tools:context=".WalletFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Wallet" />
+        tools:context=".MainActivity4"
+        android:background="#f5f5f5">
+
+        <LinearLayout
+            android:layout_width="366dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="88dp"
+            android:layout_marginStart="12sp">
+
+            <TextView
+                android:id="@+id/total_walle"
+                android:layout_width="153dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="18dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="Total Wallet Balance"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="49dp"
+                android:clipToOutline="true"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </FrameLayout>
