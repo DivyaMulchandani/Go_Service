@@ -8,38 +8,164 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity4"
-        android:background="#f5f5f5">
+        android:backgroundTint="#f5f5f5"
+        tools:context=".MainActivity4">
 
-        <LinearLayout
-            android:layout_width="366dp"
+        <RelativeLayout
+            android:id="@+id/linear_wallet_1"
+            android:layout_width="376dp"
             android:layout_height="160dp"
+            android:layout_marginStart="12sp"
             android:layout_marginTop="88dp"
-            android:layout_marginStart="12sp">
+            android:background="@drawable/rectangle_2">
 
             <TextView
-                android:id="@+id/total_walle"
+                android:id="@+id/total_wallet"
                 android:layout_width="153dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="13dp"
                 android:layout_marginTop="18dp"
-                android:textSize="14sp"
-                android:textColor="@color/black"
                 android:text="Total Wallet Balance"
-                android:textStyle="bold"
-                />
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/rupee"
                 android:layout_width="12dp"
                 android:layout_height="12dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="49dp"
-                android:clipToOutline="true"
-                />
+                android:layout_below="@+id/total_wallet"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/rupee" />
+
+            <TextView
+                android:id="@+id/some_id"
+                android:layout_width="26dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="47dp"
+                android:layout_toRightOf="@+id/rupee"
+                android:text="100"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/wallet_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="326dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/wallet" />
+
+            <ImageButton
+                android:id="@+id/qr_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/some_id"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/transparent_bg"
+                android:contentDescription="qr button"
+                android:src="@drawable/qr_button"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/gift_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="89dp"
+                android:layout_marginTop="102dp"
+                android:layout_toRightOf="@+id/qr_button"
+                android:background="@drawable/transparent_bg"
+                android:contentDescription="gift button"
+                android:src="@drawable/gift1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/plus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="91dp"
+                android:layout_marginTop="102dp"
+                android:layout_toRightOf="@+id/gift_button"
+                android:background="@drawable/transparent_bg"
+                android:contentDescription="plus button"
+                android:src="@drawable/plus1"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear_wallet_2"
+            android:layout_width="376dp"
+            android:layout_height="160dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="287dp"
+            android:background="@drawable/rectangle_2"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/payment_opt"
+                android:layout_width="109dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="10dp"
+                android:text="Payment Option"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/debit_and_c"
+                android:layout_width="355dp"
+                android:layout_height="33dp"
+                android:layout_below="@id/payment_opt"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/creditcard"
+                android:text="Debit and Credit Cards"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#424949"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/line_8"
+                android:layout_width="355dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/debit_and_c"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/line4" />
+
+            <Button
+                android:id="@+id/upi"
+                android:layout_width="355dp"
+                android:layout_height="33dp"
+                android:layout_below="@id/line_8"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/white"
+                android:drawableEnd="@drawable/upi"
+                android:text="UPI"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#424949"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/line_9"
+                android:layout_width="355dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/upi"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/line4" />
 
 
-
-        </LinearLayout>
+        </RelativeLayout>
 
     </RelativeLayout>
 
