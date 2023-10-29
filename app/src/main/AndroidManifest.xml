@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
-
+        <activity
+            android:name=".MyRating"
+            android:exported="false" />
         <activity
             android:name=".mainlayout"
             android:exported="false" />
