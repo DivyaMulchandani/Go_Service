@@ -55,7 +55,9 @@
                 android:text="@string/rating1"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+
+                />
 
             <TextView
                 android:id="@+id/rating_para_1"
@@ -132,7 +134,8 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_4"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:fontFamily="@font/noto_regular"/>
 
             <TextView
                 android:id="@+id/rating_head_5"
@@ -153,7 +156,8 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_5"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:fontFamily="@font/minimal"/>
 
             <TextView
                 android:id="@+id/rating_head_6"
