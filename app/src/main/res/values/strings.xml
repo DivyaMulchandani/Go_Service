@@ -84,5 +84,8 @@
     <string name="payment_option">Payment Option</string>
     <string name="debit_and_credit_cards">Debit and Credit Cards</string>
     <string name="upi">UPI</string>
+    <string name="booking_plans"><![CDATA[Booking & plans]]></string>
+    <string name="help1">Help</string>
+
 
 </resources>
