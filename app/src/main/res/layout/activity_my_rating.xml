@@ -88,7 +88,8 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_2"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:fontFamily="@font/josefin_bold"/>
 
             <TextView
                 android:id="@+id/rating_head_3"
@@ -109,7 +110,8 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_3"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:fontFamily="@font/geosans_light"/>
 
             <TextView
                 android:id="@+id/rating_head_4"
