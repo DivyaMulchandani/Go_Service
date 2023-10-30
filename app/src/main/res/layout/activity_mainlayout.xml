@@ -20,6 +20,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/nev_items"
+        app:labelVisibilityMode="unlabeled"
+
+
         />
 
 </RelativeLayout>

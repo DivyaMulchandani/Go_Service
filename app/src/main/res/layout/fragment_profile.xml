@@ -157,39 +157,8 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="14sp"/>
 
-                <ImageView
-                    android:id="@+id/credit_card"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/credit_card"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="152dp"/>
-                <TextView
-                    android:id="@+id/manage_payments"
-                    android:layout_width="122dp"
-                    android:layout_height="27dp"
-                    android:layout_toRightOf="@+id/credit_card"
-                    android:layout_marginTop="149dp"
-                    android:layout_marginLeft="22dp"
-                    android:text="@string/manage_payments"
-                    android:paddingTop="5dp"
-                    android:textSize="14sp"/>
-                <ImageView
-                    android:id="@+id/chevron3"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/chevron_right"
-                    android:layout_toRightOf="@+id/manage_payments"
-                    android:layout_marginLeft="128dp"
-                    android:layout_marginTop="149dp"/>
-                <ImageView
-                    android:id="@+id/line3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/line4"
-                    android:layout_below="@+id/manage_payments"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="14sp"/>
+
+
 
                 <ImageView
                     android:id="@+id/send"
