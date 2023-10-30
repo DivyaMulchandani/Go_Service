@@ -63,12 +63,34 @@
     <string name="line">line</string>
     <string name="orders">Orders</string>
     <string name="wallet">Wallet</string>
+    <string name="rating_1">Just like you rate UC professionals for the overall quality of the service,they also rate you on a scale of 1 to 5.Your aggregate rating is calculated after you have recieved ratings in at least 3 services</string>
+    <string name="rating_2">Did you know that nearly 80% of UC customers are 5-star rated. If you also want that coveted rating, here are a few kind gestures.</string>
+    <string name="rating_3">Show them you care by offering water, it\'ll help raise their spirit and energy levels</string>
+    <string name="ratings">You currently have no ratings</string>
+    <string name="rating1">Introduction customer ratings</string>
+    <string name="rating2">How can I be a 5-star customer?</string>
+    <string name="rating3">Empathise</string>
+    <string name="rating_4">Provide access to the washroom (if required); they might have been on the go for a while!</string>
+    <string name="rating4">Support</string>
+    <string name="rating5">Respect</string>
+    <string name="rating_5">Treat professionals the way you\'d expect to be treated.</string>
+    <string name="rating_6">Your aggregate rating is a simple average of all the ratings you\'ve received from UC professionals in the past. These individual ratings are anonymous, and so won\'t be visible to you or the professional</string>
+    <string name="rating6">How is customer rating calculated?</string>
+    <string name="total_wallet_balance">Total Wallet Balance</string>
+    <string name="amount">100</string>
+    <string name="qr_button">qr button</string>
+    <string name="gift_button">gift button</string>
+    <string name="plus_button">plus button</string>
+    <string name="payment_option">Payment Option</string>
+    <string name="debit_and_credit_cards">Debit and Credit Cards</string>
+    <string name="upi">UPI</string>
     <string name="booking_plans"><![CDATA[Booking & plans]]></string>
     <string name="help1">Help</string>
     <string name="member">M E M B E R</string>
     <string name="m_e_m_b_e_r">M E M B E R</string>
     <string name="membership_benefits">Membership Benefits</string>
     <string name="get_membership">GET MEMBERSHIP</string>
+
 
 
 </resources>
