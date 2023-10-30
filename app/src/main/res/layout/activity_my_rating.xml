@@ -22,7 +22,7 @@
             <TextView
                 android:id="@+id/you_current"
                 android:layout_width="244dp"
-                android:layout_height="48dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="34dp"
                 android:text="@string/ratings"
@@ -67,8 +67,9 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_1"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:fontFamily="@font/adequate"
+                android:textSize="18sp"
+                android:fontFamily="@font/minimal"
+                android:textStyle="bold"
                 />
 
             <TextView
@@ -90,8 +91,9 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_2"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:fontFamily="@font/josefin_bold"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/minimal"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/rating_head_3"
@@ -112,8 +114,9 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_3"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:fontFamily="@font/geosans_light"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/minimal"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/rating_head_4"
@@ -134,8 +137,9 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_4"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:fontFamily="@font/noto_regular"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/minimal"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/rating_head_5"
@@ -156,8 +160,9 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_5"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:fontFamily="@font/minimal"/>
+                android:textSize="18sp"
+                android:fontFamily="@font/minimal"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/rating_head_6"
@@ -178,10 +183,12 @@
                 android:layout_marginTop="13dp"
                 android:text="@string/rating_6"
                 android:textColor="@color/black"
-                android:textSize="15sp" />
+                android:textSize="18sp"
+                android:fontFamily="@font/minimal"
+                android:textStyle="bold"
+                />
 
         </LinearLayout>
-
 
     </RelativeLayout>
 
