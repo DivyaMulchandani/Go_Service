@@ -65,5 +65,10 @@
     <string name="wallet">Wallet</string>
     <string name="booking_plans"><![CDATA[Booking & plans]]></string>
     <string name="help1">Help</string>
+    <string name="member">M E M B E R</string>
+    <string name="m_e_m_b_e_r">M E M B E R</string>
+    <string name="membership_benefits">Membership Benefits</string>
+    <string name="get_membership">GET MEMBERSHIP</string>
+
 
 </resources>
