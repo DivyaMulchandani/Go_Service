@@ -73,7 +73,7 @@
                     android:layout_toRightOf="@+id/map_pin"
                     android:background="@drawable/ellipse_1"
                     android:contentDescription="@string/ellipse"
-                    android:src="@drawable/ellipse" />
+                    android:src="@drawable/profile" />
 
                 <EditText
                     android:id="@+id/rectangle_1"
