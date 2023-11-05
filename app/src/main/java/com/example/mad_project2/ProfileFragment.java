@@ -17,15 +17,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.play.core.integrity.p;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class ProfileFragment extends Fragment {
 
-    Button previousBooking , myRatings , Address , Members , Work , helpInput ;
+    Button previousBooking , myRatings , Address , Members , Work , helpInput , sign_out;
     ImageView profilePic;
     ImageButton profilebtn;
     int SELECT_PICTURE = 200;
     Uri selectedImageUri;
+    TextView profileName,profileEmail;
+    FirebaseAuth user;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,8 @@ public class ProfileFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_profile,container,false);
 
+        user = FirebaseAuth.getInstance();
+
         previousBooking = view.findViewById(R.id.previous_booking);
         myRatings = view.findViewById(R.id.my_ratings);
         Address = view.findViewById(R.id.address);
@@ -45,9 +50,14 @@ public class ProfileFragment extends Fragment {
         Work = view.findViewById(R.id.work);
         helpInput = view.findViewById(R.id.help_input);
 
+        sign_out = view.findViewById(R.id.btn_sign_out);
+
         profilePic = view.findViewById(R.id.ellipse);
 
         profilebtn = view.findViewById(R.id.ellipsebtn);
+
+        profileName= view.findViewById(R.id.Olivia);
+        profileEmail = view.findViewById(R.id.Oliviamail);
 
         profilebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +65,18 @@ public class ProfileFragment extends Fragment {
 
                 imageChooser();
 
+            }
+        });
+
+        //profileName and email
+
+        //signout
+        sign_out.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                user.signOut();
+                Intent intent = new Intent(getActivity() , MainActivity.class);
+                startActivity(intent);
             }
         });
 

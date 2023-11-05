@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et_signin_email , et_signin_password;
     Button signin ;
     CheckBox showpass ;
+    TextView forget_pass;
     private FirebaseAuth UserProfile;
 
     @Override
@@ -53,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
         showpass = findViewById(R.id.show_pass);
 
+        forget_pass = findViewById(R.id.forget_pass);
+
         btn_new_acc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,6 +73,13 @@ public class MainActivity extends AppCompatActivity {
                 }else {
                     et_signin_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
+            }
+        });
+
+        forget_pass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //forgotpassword
             }
         });
         

@@ -51,9 +51,9 @@
                 android:src="@drawable/chevron_right"
                 android:layout_toRightOf="@+id/Olivia"
                 android:layout_marginLeft="3dp"
-                android:layout_marginTop="162dp"/>
+                android:layout_marginTop="60dp"/>
             <TextView
-                android:id="@+id/mail"
+                android:id="@+id/Oliviamail"
                 android:layout_width="137dp"
                 android:layout_height="20dp"
                 android:layout_marginTop="1dp"
