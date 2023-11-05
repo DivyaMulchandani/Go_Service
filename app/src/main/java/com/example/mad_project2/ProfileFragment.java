@@ -76,9 +76,9 @@ public class ProfileFragment extends Fragment {
         if (user.getCurrentUser() != null){
            // String name = userprofile;
             String email = user.getCurrentUser().getEmail();
-            profileName.setText(name);
+            //profileName.setText(name);
             profileEmail.setText(email);
-            Log.i("hi", "onCreateView: "+name);
+            //Log.i("hi", "onCreateView: "+name);
         }else {
 
         }

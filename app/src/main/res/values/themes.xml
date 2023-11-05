@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.Mad_project2" parent="Base.Theme.Mad_project2" />
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
 </resources>
