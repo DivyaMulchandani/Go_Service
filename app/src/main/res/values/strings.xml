@@ -90,7 +90,14 @@
     <string name="m_e_m_b_e_r">M E M B E R</string>
     <string name="membership_benefits">Membership Benefits</string>
     <string name="get_membership">GET MEMBERSHIP</string>
-
+    <string name="enter_prepaid_debit_or_credit_card_details">Enter Prepaid,Debit or Credit Card Details</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_validity">Expiry/Validity</string>
+    <string name="cvv">CVV</string>
+    <string name="pay">Pay</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_upi_id">Enter UPI ID</string>
 
 
 </resources>
