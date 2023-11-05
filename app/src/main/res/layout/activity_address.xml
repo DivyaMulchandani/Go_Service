@@ -12,7 +12,7 @@
         android:layout_width="400dp"
         android:layout_height="38dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:autofillHints="Address"
         android:background="@drawable/rect_background"
@@ -28,7 +28,7 @@
         android:layout_width="15dp"
         android:layout_height="15dp"
         android:layout_marginLeft="33dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="35dp"
         android:contentDescription="@string/arrow"
         android:src="@drawable/arrow"
         tools:ignore="TouchTargetSizeCheck" />
