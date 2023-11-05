@@ -19,6 +19,11 @@
             android:name=".MyRating"
             android:exported="false" />
         <activity
+            android:name=".previousBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MembershipActivity" />
+        <activity
             android:name=".mainlayout"
             android:exported="false" />
         <activity

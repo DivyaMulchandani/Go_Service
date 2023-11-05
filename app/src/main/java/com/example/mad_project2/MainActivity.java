@@ -19,10 +19,13 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.Firebase;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.regex.Pattern;
 
@@ -38,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //DatabaseReference dbr= FirebaseDatabase.getInstance().getReference();
 
         UserProfile = FirebaseAuth.getInstance();
 
@@ -132,10 +137,11 @@ public class MainActivity extends AppCompatActivity {
     //check if once the user has logged in if yess then directly open the home screen
     @Override
     protected void onStart() {
+        Log.i("hi", "onStart:we got here ");
         super.onStart();
         if (UserProfile.getCurrentUser() != null){
             Toast.makeText(MainActivity.this,"Already logged In!",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(MainActivity.this,HomeFragment.class);
+            Intent intent = new Intent(MainActivity.this,mainlayout.class);
             startActivity(intent);
         }else {
             Toast.makeText(MainActivity.this,"You need to log in",Toast.LENGTH_LONG).show();
