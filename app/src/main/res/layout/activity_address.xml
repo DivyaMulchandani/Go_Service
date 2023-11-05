@@ -64,37 +64,26 @@
         android:layout_marginTop="18dp"
         android:background="#D9D9D9" />
 
-    <ImageButton
-        android:id="@+id/plus"
-        android:layout_width="12dp"
-        android:layout_height="12dp"
+    <Button
+        android:id="@id/add_new_add"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
         android:layout_below="@id/rectangle_5"
-        android:layout_marginLeft="11dp"
-        android:layout_marginTop="11dp"
-        android:contentDescription="@string/plus_sign"
-        android:src="@drawable/plus"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/add_new_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rectangle_5"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_toRightOf="@+id/plus"
-        android:gravity="center_horizontal|top"
+        android:backgroundTint="#f5f5f5"
+        android:drawableStart="@drawable/plus"
+        android:drawablePadding="10dp"
         android:text="@string/add_new_address"
-        android:textColor="@color/black"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
         android:textSize="13sp"
-        android:textStyle="bold" />
+        tools:ignore="TouchTargetSizeCheck"
+        />
 
     <View
         android:id="@+id/line_4"
         android:layout_width="411dp"
         android:layout_height="1dp"
         android:layout_below="@+id/add_new_add"
-        android:layout_marginTop="11dp"
         android:background="@drawable/xml_line4" />
 
     <View
@@ -102,7 +91,7 @@
         android:layout_width="411dp"
         android:layout_height="30dp"
         android:layout_below="@+id/add_new_add"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="2dp"
         android:background="#D9D9D9" />
 
     <TextView
@@ -111,7 +100,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/add_new_add"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="9dp"
         android:text="@string/default_address"
         android:textColor="@color/black"
         android:textSize="11sp"
