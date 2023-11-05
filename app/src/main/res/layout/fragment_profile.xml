@@ -13,23 +13,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="844dp">
-            <ImageView
-                android:id="@+id/Vector"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/vector"
-                android:layout_marginStart="31dp"
-                android:layout_marginTop="64dp"/>
-            <TextView
-                android:id="@+id/my_account"
-                android:layout_width="93dp"
-                android:layout_height="31dp"
-                android:layout_marginLeft="62dp"
-                android:layout_marginTop="62dp"
-                android:text="@string/my_account"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                />
+
 
             <ImageButton
                 android:id="@+id/ellipsebtn"
@@ -38,7 +22,6 @@
                 android:src="@drawable/add"
                 android:layout_marginLeft="31dp"
                 android:layout_marginTop="55dp"
-                android:layout_below="@+id/my_account"
                 android:contentDescription="@string/xyz"
                 />
 
@@ -48,16 +31,13 @@
                 android:layout_height="80dp"
                 android:layout_marginLeft="31dp"
                 android:layout_marginTop="55dp"
-                android:layout_below="@+id/my_account"
-
                 />
-
 
             <TextView
                 android:id="@+id/Olivia"
                 android:layout_width="86dp"
                 android:layout_height="31dp"
-                android:layout_marginTop="156dp"
+                android:layout_marginTop="55dp"
                 android:layout_marginLeft="130dp"
                 android:text="Olivia Grace"
                 android:textStyle="bold"
