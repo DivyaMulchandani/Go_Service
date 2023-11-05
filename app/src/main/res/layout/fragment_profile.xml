@@ -39,7 +39,7 @@
                 android:layout_height="31dp"
                 android:layout_marginTop="55dp"
                 android:layout_marginLeft="130dp"
-                android:text="Olivia Grace"
+                android:text=""
                 android:textStyle="bold"
                 android:textSize="16dp"
                 android:paddingTop="5dp"
@@ -59,7 +59,7 @@
                 android:layout_marginTop="1dp"
                 android:layout_marginLeft="130dp"
                 android:layout_below="@+id/Olivia"
-                android:text="Olivia.grace45@gmail.com"
+                android:text=""
                 android:textSize="11sp"
                 android:textColor="@color/black"/>
 

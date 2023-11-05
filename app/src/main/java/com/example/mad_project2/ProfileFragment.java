@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,9 +16,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.play.core.integrity.p;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 
 
 public class ProfileFragment extends Fragment {
@@ -29,6 +32,7 @@ public class ProfileFragment extends Fragment {
     Uri selectedImageUri;
     TextView profileName,profileEmail;
     FirebaseAuth user;
+    DatabaseReference userprofile;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +73,15 @@ public class ProfileFragment extends Fragment {
         });
 
         //profileName and email
+        if (user.getCurrentUser() != null){
+           // String name = userprofile;
+            String email = user.getCurrentUser().getEmail();
+            profileName.setText(name);
+            profileEmail.setText(email);
+            Log.i("hi", "onCreateView: "+name);
+        }else {
+
+        }
 
         //signout
         sign_out.setOnClickListener(new View.OnClickListener() {
