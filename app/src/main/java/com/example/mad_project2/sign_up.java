@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -37,6 +38,8 @@ public class sign_up extends AppCompatActivity {
     Button btn_signup;
     CheckBox showpass;
 
+    TextView already_hav;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,8 @@ public class sign_up extends AppCompatActivity {
 
         showpass = findViewById(R.id.show_pass);
 
+        already_hav =findViewById(R.id.already_hav);
+
         btn_signup = findViewById(R.id.btn_signup);
 
         showpass.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -56,9 +61,19 @@ public class sign_up extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     et_password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    et_conf_pass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                 }else {
                     et_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    et_conf_pass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
+            }
+        });
+
+        already_hav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(sign_up.this , MainActivity.class);
+                startActivity(intent);
             }
         });
 
