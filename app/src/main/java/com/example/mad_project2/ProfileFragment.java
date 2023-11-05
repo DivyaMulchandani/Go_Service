@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +21,7 @@ import com.google.android.play.core.integrity.p;
 
 public class ProfileFragment extends Fragment {
 
-    TextView previousBooking , myRatings , Address , Members , Work , helpInput ;
+    Button previousBooking , myRatings , Address , Members , Work , helpInput ;
     ImageView profilePic;
     ImageButton profilebtn;
     int SELECT_PICTURE = 200;
@@ -68,7 +69,7 @@ public class ProfileFragment extends Fragment {
         myRatings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity() , myRatingActivity.class);
+                Intent intent = new Intent(getActivity() , MyRating.class);
                 startActivity(intent);
             }
         });
@@ -84,8 +85,8 @@ public class ProfileFragment extends Fragment {
         Work.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getActivity() , MembershipActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getActivity() , WorkForUsActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -102,7 +103,7 @@ public class ProfileFragment extends Fragment {
         Address.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity() , previousBookingActivity.class);
+                Intent intent = new Intent(getActivity() , AddressActivity.class);
                 startActivity(intent);
             }
         });
