@@ -110,8 +110,25 @@
     <string name="enter_state">Enter State</string>
     <string name="ok">OK</string>
     <string name="add">ADD</string>
+
     <string name="enter_referral_code">Enter Referral Code</string>
     <string name="redeem">Redeem</string>
+
+    <string name="install">Install</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="service">Service</string>
+    <string name="repair">Repair</string>
+    <string name="repair1">Repair</string>
+    <string name="install1">Install</string>
+    <string name="_30_days_warranty">30 DAYS WARRANTY</string>
+    <string name="price">Price</string>
+    <string name="installation_of_indoor_outdoor_units_with_free_gas_check"><![CDATA[\u2022 Installation of indoor & outdoor units with free gas check]]></string>
+    <string name="procurement_of_spare_at_extra_cost">\u2022 Procurement of spare(at extra cost)</string>
+    <string name="add1">Add</string>
+    <string name="uninstall1">Uninstall</string>
+    <string name="service1">Service</string>
+    <string name="repair_ac">Repair</string>
+
 
 
 </resources>
