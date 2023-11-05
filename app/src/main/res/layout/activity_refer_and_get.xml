@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/refer_and_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refer_and_get_free_services"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/refer_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refer_and_get"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_referral_code"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/redeem_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/redeem"
+        android:layout_below="@+id/refer_input"
+        android:backgroundTint="#2940BBD6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>

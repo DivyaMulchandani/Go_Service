@@ -33,7 +33,7 @@
     <string name="geyser_repair_amp_service">Geyser Repair &amp; Service</string>
     <string name="rectangle">rectangle</string>
     <string name="polygon">polygon</string>
-    <string name="refer_and_get_free_services">Refer and get free services</string>
+    <string name="refer_and_get_free_services">Refer and get Free Services</string>
     <string name="ellipse">ellipse</string>
     <string name="drop_pin">drop pin</string>
     <string name="gift">gift</string>
@@ -110,7 +110,8 @@
     <string name="enter_state">Enter State</string>
     <string name="ok">OK</string>
     <string name="add">ADD</string>
-
+    <string name="enter_referral_code">Enter Referral Code</string>
+    <string name="redeem">Redeem</string>
 
 
 </resources>

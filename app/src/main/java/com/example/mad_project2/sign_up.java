@@ -3,18 +3,26 @@ package com.example.mad_project2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -36,6 +44,7 @@ public class sign_up extends AppCompatActivity {
     EditText et_name , et_email , et_password , et_conf_pass;
     Button btn_signup;
     CheckBox showpass;
+    TextView conditionsOfUse,privacyNotice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +55,9 @@ public class sign_up extends AppCompatActivity {
         et_email = findViewById(R.id.et_email);
         et_password = findViewById(R.id.et_pass);
         et_conf_pass = findViewById(R.id.et_conf_pass);
+
+        conditionsOfUse=findViewById(R.id.tv2);
+        privacyNotice=findViewById(R.id.tv4);
 
         showpass = findViewById(R.id.show_pass);
 
@@ -59,6 +71,20 @@ public class sign_up extends AppCompatActivity {
                 }else {
                     et_password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                 }
+            }
+        });
+
+        conditionsOfUse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog1();
+            }
+        });
+
+        privacyNotice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog2();
             }
         });
 
@@ -104,6 +130,8 @@ public class sign_up extends AppCompatActivity {
 
             }
         });
+
+
     }
 
     public void register(String name,String email,String password,String cf_pass){
@@ -164,5 +192,51 @@ public class sign_up extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void showDialog1() {
+
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.popup_conditions);
+
+        Button okBtn= dialog.findViewById(R.id.btn_conditions);
+
+        okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
+
+    }
+
+    private void showDialog2() {
+
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.popup_privacy);
+
+        Button okBtn= dialog.findViewById(R.id.btn_privacy);
+
+        okBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        dialog.show();
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
+        dialog.getWindow().setGravity(Gravity.BOTTOM);
+
     }
 }
