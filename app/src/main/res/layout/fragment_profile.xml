@@ -46,11 +46,10 @@
                 android:id="@+id/ellipse"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/ellipse"
                 android:layout_marginLeft="31dp"
                 android:layout_marginTop="55dp"
                 android:layout_below="@+id/my_account"
-                android:visibility="invisible"
+
                 />
 
 
