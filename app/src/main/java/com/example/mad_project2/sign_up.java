@@ -91,7 +91,9 @@ public class sign_up extends AppCompatActivity {
         privacyNotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDialog2();
+                showDialog2();}
+        });
+
 
         already_hav.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -210,7 +212,7 @@ public class sign_up extends AppCompatActivity {
 
     private void showDialog1() {
 
-        final Dialog dialog = new Dialog(this);
+        final Dialog dialog = new Dialog(sign_up.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.popup_conditions);
 
@@ -233,7 +235,7 @@ public class sign_up extends AppCompatActivity {
 
     private void showDialog2() {
 
-        final Dialog dialog = new Dialog(this);
+        final Dialog dialog = new Dialog(sign_up.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setContentView(R.layout.popup_privacy);
 
@@ -254,3 +256,4 @@ public class sign_up extends AppCompatActivity {
 
     }
 }
+

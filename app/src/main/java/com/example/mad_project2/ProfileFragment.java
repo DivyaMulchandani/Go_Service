@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -20,7 +21,14 @@ import android.widget.Toast;
 
 import com.google.android.play.core.integrity.p;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.jar.Attributes;
 
 
 public class ProfileFragment extends Fragment {
@@ -32,7 +40,9 @@ public class ProfileFragment extends Fragment {
     Uri selectedImageUri;
     TextView profileName,profileEmail;
     FirebaseAuth user;
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference userprofile;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,9 +84,13 @@ public class ProfileFragment extends Fragment {
 
         //profileName and email
         if (user.getCurrentUser() != null){
-           // String name = userprofile;
+            userprofile= database.getReference("//Registered User: /osyXlltSKKUvaqM906bQnEFYE502/firebase/Name");
+            //profile.child(firebaseUser.getUid()).setValue(user)
+//            String name = userprofile.child(firebaseUser.getUid()).getKey();
+
+            String name =userprofile.toString();
             String email = user.getCurrentUser().getEmail();
-            //profileName.setText(name);
+            profileName.setText(name);
             profileEmail.setText(email);
             //Log.i("hi", "onCreateView: "+name);
         }else {

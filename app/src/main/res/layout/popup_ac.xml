@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg">
 
     <LinearLayout
         android:id="@+id/ll1"
@@ -11,7 +12,7 @@
         android:layout_marginStart="15dp">
 
     <ImageButton
-            android:id="@+id/install_btn"
+            android:id="@+id/install_btn1"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/install1"
@@ -39,7 +40,7 @@
         android:layout_marginStart="23dp">
 
         <ImageButton
-            android:id="@+id/uninstall_btn"
+            android:id="@+id/uninstall_btn1"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/uninstall"
@@ -68,7 +69,7 @@
         android:layout_marginStart="23dp">
 
         <ImageButton
-            android:id="@+id/service_btn"
+            android:id="@+id/service_btn1"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/service"
@@ -97,7 +98,7 @@
         android:layout_marginStart="23dp">
 
         <ImageButton
-            android:id="@+id/repair_btn"
+            android:id="@+id/repair_btn1"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:src="@drawable/repair"
