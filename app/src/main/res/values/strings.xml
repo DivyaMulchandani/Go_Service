@@ -92,6 +92,16 @@
     <string name="m_e_m_b_e_r">M E M B E R</string>
     <string name="membership_benefits">Membership Benefits</string>
     <string name="get_membership">GET MEMBERSHIP</string>
+
+    <string name="enter_prepaid_debit_or_credit_card_details">Enter Prepaid,Debit or Credit Card Details</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_validity">Expiry/Validity</string>
+    <string name="cvv">CVV</string>
+    <string name="pay">Pay</string>
+    <string name="mm_yy">MM/YY</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="enter_upi_id">Enter UPI ID</string>
+
     <string name="xyz">xyz</string>
     <string name="conditions">You agree to provide us with accurate personal information, such as your email address, mailing address and other contact details in order to complete your order or contact you as needed. You agree to promptly update your account and information. You authorize us to collect and use this information to contact you in accordance with our Privacy Policy.</string>
     <string name="privacy_notice_text">We are responsible for maintaining and protecting the Personal Information under our control. We have designated an individual or individuals who is/are responsible for compliance with our privacy policy. Knowledge and consent are required for the collection, use or disclosure of Personal Information except where required or permitted by law.</string>
@@ -100,6 +110,7 @@
     <string name="enter_state">Enter State</string>
     <string name="ok">OK</string>
     <string name="add">ADD</string>
+
 
 
 </resources>
