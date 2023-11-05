@@ -35,7 +35,7 @@
         android:id="@+id/saveBig"
         android:layout_width="292dp"
         android:layout_height="77dp"
-        android:src="@drawable/saveBig"
+        android:src="@drawable/savebig"
         android:layout_marginTop="290dp"
         android:layout_marginStart="49dp"/>
     
@@ -43,7 +43,7 @@
         android:id="@+id/ServicesEveryday"
         android:layout_width="323dp"
         android:layout_height="27dp"
-        android:src="@drawable/allServices"
+        android:src="@drawable/allservices"
         android:layout_marginStart="33dp"
         android:layout_marginTop="363dp"
         android:background="@color/black"
@@ -88,7 +88,7 @@
         android:id="@+id/bigDiscount"
         android:layout_width="96dp"
         android:layout_height="15dp"
-        android:src="@drawable/bigDiscounts"
+        android:src="@drawable/bigdiscounts"
         android:layout_marginTop="480dp"
         android:layout_marginStart="160dp"
         />
@@ -97,7 +97,7 @@
         android:id="@+id/saveBigEveryday"
         android:layout_width="171dp"
         android:layout_height="12dp"
-        android:src="@drawable/saveEveryday"
+        android:src="@drawable/saveeveryday"
         android:layout_marginTop="497dp"
         android:layout_marginStart="160dp"
         />
@@ -115,7 +115,7 @@
         android:id="@+id/perfectPriority"
         android:layout_width="130dp"
         android:layout_height="15dp"
-        android:src="@drawable/priorityPerfected"
+        android:src="@drawable/priorityperfected"
         android:layout_below="@+id/saveBigEveryday"
         android:layout_marginTop="64dp"
         android:layout_marginStart="160dp"/>
@@ -123,7 +123,7 @@
         android:id="@+id/ExcellentService"
         android:layout_width="177dp"
         android:layout_height="12dp"
-        android:src="@drawable/exceptionalService"
+        android:src="@drawable/exceptionalservice"
         android:layout_marginTop="590dp"
         android:layout_marginStart="160dp"
         />
@@ -148,7 +148,7 @@
         android:id="@+id/support"
         android:layout_width="162dp"
         android:layout_height="12dp"
-        android:src="@drawable/dedicateService"
+        android:src="@drawable/dedicateservice"
         android:layout_marginTop="677dp"
         android:layout_marginStart="160dp"
         />

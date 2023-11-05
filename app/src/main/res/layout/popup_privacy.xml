@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/privacy_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_notice"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/content_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/privacy_notice_text"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_below="@+id/privacy_notice"
+        android:layout_margin="5dp"
+        tools:ignore="VisualLintLongText" />
+
+    <Button
+        android:id="@+id/btn_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#2940BBD6"
+        android:layout_below="@+id/content_privacy"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

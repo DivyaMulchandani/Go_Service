@@ -27,6 +27,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import org.w3c.dom.Text;
 
+import java.util.HashMap;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -105,10 +106,10 @@ public class sign_up extends AppCompatActivity {
         });
     }
 
-    public void register(String name,String email,String passwaord,String cf_pass){
+    public void register(String name,String email,String password,String cf_pass){
         //firebase authentication karega baadme
         FirebaseAuth auth = FirebaseAuth.getInstance();
-        auth.createUserWithEmailAndPassword(email,passwaord).addOnCompleteListener(sign_up.this, new OnCompleteListener<AuthResult>() {
+        auth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(sign_up.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
@@ -117,13 +118,18 @@ public class sign_up extends AppCompatActivity {
                     FirebaseUser firebaseUser = auth.getCurrentUser();
 
                     //storing your data into firebase realtime database
-                    ReadWriteUserDetails writeUserDetails = new ReadWriteUserDetails(name,email,passwaord,cf_pass);
+                    ReadWriteUserDetails writeUserDetails = new ReadWriteUserDetails(name,email,password,cf_pass);
+                    HashMap<String,Object> user = new HashMap<>();
+                    user.put("Name",name);
+                    user.put("Email",email);
+                    user.put("Password",password);
 
 
                     //creating a note to a user to add data into realtime data base
                     DatabaseReference profile = FirebaseDatabase.getInstance().getReference("Registered User: ");
                     assert firebaseUser != null;
-                    profile.child(firebaseUser.getUid()).setValue(writeUserDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    //profile.child(firebaseUser.getUid()).setValue(writeUserDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    profile.child(firebaseUser.getUid()).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
 
