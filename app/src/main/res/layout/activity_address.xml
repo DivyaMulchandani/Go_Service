@@ -225,5 +225,51 @@
         android:textSize="11sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@+id/rectangle_7"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="#CF000000"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/addr_2_line_1"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_below="@+id/name_2"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/addr_2_line_2"
+        android:layout_width="101dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/addr_2_line_1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/addr_2_line_3"
+        android:layout_width="41dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/addr_2_line_2"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="2dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="11sp" />
+
+
 
 </RelativeLayout>
