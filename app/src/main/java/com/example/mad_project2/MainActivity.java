@@ -137,10 +137,11 @@ public class MainActivity extends AppCompatActivity {
     //check if once the user has logged in if yess then directly open the home screen
     @Override
     protected void onStart() {
+        Log.i("hi", "onStart:we got here ");
         super.onStart();
         if (UserProfile.getCurrentUser() != null){
             Toast.makeText(MainActivity.this,"Already logged In!",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(MainActivity.this,HomeFragment.class);
+            Intent intent = new Intent(MainActivity.this,mainlayout.class);
             startActivity(intent);
         }else {
             Toast.makeText(MainActivity.this,"You need to log in",Toast.LENGTH_LONG).show();
