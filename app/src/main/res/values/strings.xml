@@ -128,6 +128,16 @@
     <string name="uninstall1">Uninstall</string>
     <string name="service1">Service</string>
     <string name="repair_ac">Repair</string>
-
+    <string name="expected_price_rs">Expected Price: Rs</string>
+    <string name="uninstallation_of_both_indoor_and_outdoor_units">\u2022 Uninstallation of both indoor and outdoor units</string>
+    <string name="get_2x_deeper_dust_removal_with_foamjet_technology">\u2022 Get 2x deeper dust removal with foamjet technology</string>
+    <string name="thorough_cleaning_of_both_indoor_and_outdoor_ac_units">\u2022 Thorough cleaning of both indoor and outdoor ac units</string>
+    <string name="u2022_detailed_issue_diagnosis_with_same_day_resolution">• Detailed issue diagnosis with same day resolution</string>
+    <string name="_6_months_warranty">6 MONTHS WARRANTY</string>
+    <string name="u2022_price_includes_visit_and_diagnosis">• Price includes visit and diagnosis</string>
+    <string name="u2022_spare_part_rates_applicable_as_per_rate_card">• Spare part rates applicable as per rate card</string>
+    <string name="_3_months_warranty">3 MONTHS WARRANTY</string>
+    <string name="includes_thorough_cleaning_and_descaling_of_geyser">• Includes thorough cleaning and descaling of geyser</string>
+    <string name="leads_to_faster_heating_and_improve_machine_life">• Leads to faster heating and improve machine life</string>
 
 </resources>
