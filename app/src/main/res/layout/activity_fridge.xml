@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FridgeActivity">
+
+    <RelativeLayout
+        android:id="@+id/bookings2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/headline2"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/minimal"
+            android:text="Bookings"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/repair_fridge"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/headline2"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/repair_ac"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/warranty_fridge1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/repair_fridge"
+            android:layout_marginStart="12dp"
+            android:text="@string/_6_months_warranty"
+            android:textColor="#0CB951"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/repairing_fridge"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/headline2"
+            android:layout_marginStart="302dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/xyz"
+            android:src="@drawable/fridge" />
+
+        <ImageView
+            android:id="@+id/star_f1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/group" />
+
+        <TextView
+            android:id="@+id/rate_f1"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/star_f1"
+            android:text="4.79"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/price_f1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/install_rupee_f1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/price_f1"
+            android:src="@drawable/rupee_ac" />
+
+        <TextView
+            android:id="@+id/price_rate_f1"
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/price_f1"
+            android:text="175"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/f_bullet1"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="55dp"
+            android:text="@string/u2022_price_includes_visit_and_diagnosis"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/f_bullet2"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_below="@+id/warranty_fridge1"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="78dp"
+            android:text="@string/u2022_spare_part_rates_applicable_as_per_rate_card"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/add_btn_fridge"
+            android:layout_width="38dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="328dp"
+            android:layout_marginTop="173dp"
+            android:background="@color/white"
+            android:text="@string/add1"
+            android:textAllCaps="false"
+            android:textColor="#6E4CCD"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/linear_fridge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_bullet2"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/expected_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expected_price_rs"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:id="@+id/total_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_pay_2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/f_bullet2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#2940BBD6"
+            android:text="Pay"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+
+</ScrollView>
