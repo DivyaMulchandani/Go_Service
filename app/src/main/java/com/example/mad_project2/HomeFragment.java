@@ -64,28 +64,32 @@ public class HomeFragment extends Fragment {
         ac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog1();
+                Intent intent = new Intent(getActivity() , AcActivity.class);
+                startActivity(intent);
             }
         });
 
         refrigerator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog2();
+                Intent intent = new Intent(getActivity() , FridgeActivity.class);
+                startActivity(intent);
             }
         });
 
         geyser.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog3();
+                Intent intent = new Intent(getActivity() , GeyserActivity.class);
+                startActivity(intent);
             }
         });
 
         washingMachine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                showDialog4();
+                Intent intent = new Intent(getActivity() , WashingActivity.class);
+                startActivity(intent);
             }
         });
 
