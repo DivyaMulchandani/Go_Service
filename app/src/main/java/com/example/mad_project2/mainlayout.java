@@ -23,13 +23,12 @@ public class mainlayout extends AppCompatActivity {
 
         navigationView.setOnItemSelectedListener(item -> {
 
-
-
             if (item.getItemId()==R.id.nav_home){
                 replaceFragemt(new HomeFragment());
             } else if (item.getItemId()==R.id.nav_orders) {
                 replaceFragemt(new OrderFragment());
             } else if (item.getItemId()==R.id.nav_wallet) {
+//                displayWalletFragment();
                 replaceFragemt(new WalletFragment());
             } else {
                 replaceFragemt(new HomeFragment());
@@ -40,6 +39,11 @@ public class mainlayout extends AppCompatActivity {
 
 
     }
+
+//    private void displayWalletFragment() {
+//        WalletFragment walletFragment = WalletFragment.newInstance(9999); // Replace 9999 with the appropriate data
+//        replaceFragemt(walletFragment);
+//    }
     private void replaceFragemt(Fragment fragment){
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

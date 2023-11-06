@@ -1,6 +1,7 @@
 package com.example.mad_project2;
 
 import android.app.Dialog;
+import android.content.ClipData;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -19,10 +20,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class HomeFragment extends Fragment {
 
-    ImageView profile;
+    ImageView profile,gift;
     ImageButton ac,refrigerator,geyser,washingMachine;
     View view;
 
@@ -35,8 +39,20 @@ public class HomeFragment extends Fragment {
         profile = view.findViewById(R.id.ellipse_profile);
         ac = view.findViewById(R.id.img_button_1);
         refrigerator = view.findViewById(R.id.img_button_2);
-        geyser = view.findViewById(R.id.img_button_3);
-        washingMachine = view.findViewById(R.id.img_button_4);
+        geyser = view.findViewById(R.id.img_button_5);
+        washingMachine = view.findViewById(R.id.img_button_3);
+
+        gift = view.findViewById(R.id.gift);
+
+        gift.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity() , ReferAndGetActivity.class);
+                startActivity(intent);
+            }
+        });
+
+//        List<ClipData.Item> cart = new ArrayList<>();
 
         profile.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -21,7 +21,8 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/nev_items"
         app:labelVisibilityMode="unlabeled"
-        app:itemIconTint="@color/white"
+        app:itemIconTint="#D9d9d9"
+
 
         />
 

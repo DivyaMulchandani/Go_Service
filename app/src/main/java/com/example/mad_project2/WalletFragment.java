@@ -15,6 +15,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -24,6 +25,7 @@ public class WalletFragment extends Fragment {
     ImageButton plus_button;
     RelativeLayout linear_wallet_2;
     Button card,upi;
+    TextView some_id;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +37,14 @@ public class WalletFragment extends Fragment {
         linear_wallet_2 = view.findViewById(R.id.linear_wallet_2);
         card = view.findViewById(R.id.debit_and_c);
         upi = view.findViewById(R.id.upi);
+        some_id = view.findViewById(R.id.some_id);
+
+        Bundle args = getArguments();
+        if (args != null) {
+            int receivedInt = args.getInt("int");
+            // Now, you can use the received data in your fragment
+            some_id.setText(receivedInt);
+        }
 
         plus_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +69,14 @@ public class WalletFragment extends Fragment {
 
 
         return view;
+    }
+
+    public static WalletFragment newInstance(int x) {
+        WalletFragment fragment = new WalletFragment();
+        Bundle args = new Bundle();
+        args.putInt("int", x);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     private void showDialog1() {
