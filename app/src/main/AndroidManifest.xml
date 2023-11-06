@@ -13,6 +13,18 @@
         android:theme="@style/Theme.AppCompat.Light"
         tools:targetApi="31">
         <activity
+            android:name=".GeyserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WashingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FridgeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcActivity"
+            android:exported="false" />
+        <activity
             android:name=".ReferAndGetActivity"
             android:exported="false" />
         <activity
@@ -45,9 +57,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
