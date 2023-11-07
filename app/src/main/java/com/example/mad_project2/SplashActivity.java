@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class SplashActivity extends AppCompatActivity {
 
-    private static int DELAY_TIME =7000;
+    private static int DELAY_TIME =5000;
     Animation topAnim;
     ImageView imageView;
 

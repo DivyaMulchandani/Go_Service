@@ -535,7 +535,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/expected_price_rs"
                 android:textColor="@color/black"
-                android:textSize="25sp"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:id="@+id/expected_1"
                 android:textAlignment="center"
                 android:layout_marginStart="12dp"
@@ -553,20 +554,6 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/btn_pay_1"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_below="@+id/linear_ac"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="20dp"
-            android:backgroundTint="#2940BBD6"
-            android:text="Pay"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            tools:ignore="TouchTargetSizeCheck"
-            android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 
 

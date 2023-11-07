@@ -33,7 +33,7 @@
             android:textSize="24sp"
             android:textColor="#B9000000"/>
         <TextView
-            android:id="@+id/forget_pass"
+            android:id="@+id/forgot_pass"
             android:layout_width="120dp"
             android:layout_height="21dp"
             android:layout_marginStart="275dp"

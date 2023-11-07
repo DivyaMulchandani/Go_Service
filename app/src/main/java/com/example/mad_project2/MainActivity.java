@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     EditText et_signin_email , et_signin_password;
     Button signin ;
     CheckBox showpass ;
-    TextView forget_pass,privacyNotice,conditionsOfUse;
+    TextView forgot_pass,privacyNotice,conditionsOfUse;
     private FirebaseAuth UserProfile;
 
     @Override
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         showpass = findViewById(R.id.show_pass);
 
-        forget_pass = findViewById(R.id.forget_pass);
+        forgot_pass = findViewById(R.id.forgot_pass);
 
         btn_new_acc.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,10 +94,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        forget_pass.setOnClickListener(new View.OnClickListener() {
+        forgot_pass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //forgotpassword
+                Toast.makeText(MainActivity.this,"You can set your password now!",Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this,ForgotPasswordActivity.class));
             }
         });
         
@@ -109,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 String S_et_signin_password = et_signin_password.getText().toString();
                 
                 if (TextUtils.isEmpty(S_et_signin_email)){
-                    Toast.makeText(MainActivity.this,"Entwer email !",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"Enter email !",Toast.LENGTH_LONG).show();
                     et_signin_email.setError("Enter Email");
                     et_signin_email.requestFocus();
                 } else if (TextUtils.isEmpty(S_et_signin_password)) {

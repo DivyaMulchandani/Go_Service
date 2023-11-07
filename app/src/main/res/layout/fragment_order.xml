@@ -23,7 +23,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="13dp"
                 android:fontFamily="@font/minimal"
-                android:text="Bookings"
+                android:text="CART"
                 android:textColor="@color/black"
                 android:textSize="40sp"
                 android:textStyle="bold" />
@@ -37,11 +37,13 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/Rl1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    >
 
                     <TextView
-                        android:id="@+id/install_ac"
+                        android:id="@+id/install_ac1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="12dp"
@@ -55,18 +57,18 @@
                         android:id="@+id/warranty1"
                         android:layout_width="140dp"
                         android:layout_height="20dp"
-                        android:layout_below="@+id/install_ac"
+                        android:layout_below="@+id/install_ac1"
                         android:layout_marginStart="12dp"
                         android:text="@string/_30_days_warranty"
                         android:textColor="#0CB951"
                         android:textSize="14sp" />
 
                     <ImageView
-                        android:id="@+id/installing_ac"
+                        android:id="@+id/installing_ac1"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginStart="302dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:contentDescription="@string/xyz"
                         android:src="@drawable/install1" />
 
@@ -124,36 +126,14 @@
                         android:textColor="@color/black"
                         android:textSize="10sp" />
 
-                    <TextView
-                        android:id="@+id/ac_bullet1"
-                        android:layout_width="176dp"
-                        android:layout_height="30dp"
-                        android:layout_below="@+id/warranty1"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="55dp"
-                        android:text="@string/installation_of_indoor_outdoor_units_with_free_gas_check"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/ac_bullet2"
-                        android:layout_width="167dp"
-                        android:layout_height="15dp"
-                        android:layout_below="@+id/warranty1"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="90dp"
-                        android:text="@string/procurement_of_spare_at_extra_cost"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
                     <Button
-                        android:id="@+id/add_btn_ac1"
+                        android:id="@+id/min1"
                         android:layout_width="38dp"
                         android:layout_height="22dp"
                         android:layout_marginStart="328dp"
-                        android:layout_marginTop="110dp"
+                        android:layout_marginTop="100dp"
                         android:background="@color/white"
-                        android:text="@string/add1"
+                        android:text="-"
                         android:textAllCaps="false"
                         android:textColor="#6E4CCD"
                         android:textSize="16sp"
@@ -162,120 +142,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/uninstall_ac"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="15dp"
-                        android:text="@string/uninstall1"
-                        android:textColor="@color/black"
-                        android:textSize="24sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/warranty2"
-                        android:layout_width="140dp"
-                        android:layout_height="20dp"
-                        android:layout_below="@+id/uninstall_ac"
-                        android:layout_marginStart="12dp"
-                        android:text="@string/_30_days_warranty"
-                        android:textColor="#0CB951"
-                        android:textSize="14sp" />
-
-                    <ImageView
-                        android:id="@+id/uninstalling_ac"
-                        android:layout_width="90dp"
-                        android:layout_height="90dp"
-                        android:layout_marginStart="302dp"
-                        android:layout_marginTop="30dp"
-                        android:contentDescription="@string/xyz"
-                        android:src="@drawable/uninstall" />
-
-                    <ImageView
-                        android:id="@+id/star2"
-                        android:layout_width="10dp"
-                        android:layout_height="10dp"
-                        android:layout_below="@+id/warranty2"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="7dp"
-                        android:src="@drawable/group" />
-
-                    <TextView
-                        android:id="@+id/rate2"
-                        android:layout_width="20dp"
-                        android:layout_height="12dp"
-                        android:layout_below="@+id/warranty2"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@+id/star2"
-                        android:text="4.87"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/price2"
-                        android:layout_width="24dp"
-                        android:layout_height="24dp"
-                        android:layout_below="@+id/warranty2"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="24dp"
-                        android:text="@string/price"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <ImageView
-                        android:id="@+id/install_rupee2"
-                        android:layout_width="12dp"
-                        android:layout_height="12dp"
-                        android:layout_below="@+id/warranty2"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="25dp"
-                        android:layout_toRightOf="@+id/price2"
-                        android:src="@drawable/rupee_ac" />
-
-                    <TextView
-                        android:id="@+id/price_rate2"
-                        android:layout_width="20dp"
-                        android:layout_height="12dp"
-                        android:layout_below="@+id/warranty2"
-                        android:layout_marginStart="14dp"
-                        android:layout_marginTop="24dp"
-                        android:layout_toRightOf="@+id/price2"
-                        android:text="400"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/ac_bullet3"
-                        android:layout_width="176dp"
-                        android:layout_height="30dp"
-                        android:layout_below="@+id/warranty2"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="55dp"
-                        android:text="@string/uninstallation_of_both_indoor_and_outdoor_units"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <Button
-                        android:id="@+id/add_btn_ac2"
-                        android:layout_width="38dp"
-                        android:layout_height="22dp"
-                        android:layout_marginStart="328dp"
-                        android:layout_marginTop="110dp"
-                        android:background="@color/white"
-                        android:text="@string/add1"
-                        android:textAllCaps="false"
-                        android:textColor="#6E4CCD"
-                        android:textSize="16sp"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
+                    android:id="@+id/Rl2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -305,7 +172,7 @@
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginStart="302dp"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="20dp"
                         android:contentDescription="@string/xyz"
                         android:src="@drawable/service" />
 
@@ -363,36 +230,14 @@
                         android:textColor="@color/black"
                         android:textSize="10sp" />
 
-                    <TextView
-                        android:id="@+id/ac_bullet5"
-                        android:layout_width="176dp"
-                        android:layout_height="30dp"
-                        android:layout_below="@+id/warranty3"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="55dp"
-                        android:text="@string/get_2x_deeper_dust_removal_with_foamjet_technology"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/ac_bullet6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:layout_below="@+id/warranty3"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="90dp"
-                        android:text="@string/thorough_cleaning_of_both_indoor_and_outdoor_ac_units"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
                     <Button
-                        android:id="@+id/add_btn_ac3"
+                        android:id="@+id/min2"
                         android:layout_width="38dp"
                         android:layout_height="22dp"
                         android:layout_marginStart="328dp"
-                        android:layout_marginTop="110dp"
+                        android:layout_marginTop="100dp"
                         android:background="@color/white"
-                        android:text="@string/add1"
+                        android:text="-"
                         android:textAllCaps="false"
                         android:textColor="#6E4CCD"
                         android:textSize="16sp"
@@ -401,65 +246,66 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/Rl3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/repair_ac"
-                        android:layout_width="72dp"
+                        android:id="@+id/service_g"
+                        android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="15dp"
-                        android:text="@string/repair_ac"
+                        android:text="@string/service"
                         android:textColor="@color/black"
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/warranty4"
+                        android:id="@+id/warranty_g3"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:layout_below="@+id/repair_ac"
+                        android:layout_below="@+id/service_g"
                         android:layout_marginStart="12dp"
-                        android:text="Upto 180 Days WARRANTY"
+                        android:text="@string/_3_months_warranty"
                         android:textColor="#0CB951"
                         android:textSize="14sp" />
 
                     <ImageView
-                        android:id="@+id/repairing_ac"
+                        android:id="@+id/servicing_g"
                         android:layout_width="90dp"
                         android:layout_height="90dp"
                         android:layout_marginStart="302dp"
                         android:layout_marginTop="30dp"
                         android:contentDescription="@string/xyz"
-                        android:src="@drawable/repair" />
+                        android:src="@drawable/service_geyser" />
 
                     <ImageView
-                        android:id="@+id/star4"
+                        android:id="@+id/star_g3"
                         android:layout_width="10dp"
                         android:layout_height="10dp"
-                        android:layout_below="@+id/warranty4"
+                        android:layout_below="@+id/warranty_g3"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="7dp"
                         android:src="@drawable/group" />
 
                     <TextView
-                        android:id="@+id/rate4"
+                        android:id="@+id/rate_g3"
                         android:layout_width="20dp"
                         android:layout_height="12dp"
-                        android:layout_below="@+id/warranty4"
+                        android:layout_below="@+id/warranty_g3"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="6dp"
-                        android:layout_toRightOf="@+id/star4"
-                        android:text="4.78"
+                        android:layout_toRightOf="@+id/star_g3"
+                        android:text="4.81"
                         android:textColor="@color/black"
                         android:textSize="10sp" />
 
                     <TextView
-                        android:id="@+id/price4"
+                        android:id="@+id/price_g3"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:layout_below="@+id/warranty4"
+                        android:layout_below="@+id/warranty_g3"
                         android:layout_marginStart="12dp"
                         android:layout_marginTop="24dp"
                         android:text="@string/price"
@@ -467,111 +313,60 @@
                         android:textSize="10sp" />
 
                     <ImageView
-                        android:id="@+id/install_rupee4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/warranty4"
+                        android:id="@+id/install_rupee_g3"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_below="@+id/warranty_g3"
                         android:layout_marginStart="4dp"
                         android:layout_marginTop="25dp"
-                        android:layout_toRightOf="@+id/price4"
+                        android:layout_toRightOf="@+id/price_g3"
                         android:src="@drawable/rupee_ac" />
 
                     <TextView
-                        android:id="@+id/price_rate4"
+                        android:id="@+id/price_rate_g3"
                         android:layout_width="20dp"
                         android:layout_height="12dp"
-                        android:layout_below="@+id/warranty4"
+                        android:layout_below="@+id/warranty_g3"
                         android:layout_marginStart="14dp"
                         android:layout_marginTop="24dp"
-                        android:layout_toRightOf="@+id/price4"
-                        android:text="300"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/ac_bullet7"
-                        android:layout_width="176dp"
-                        android:layout_height="30dp"
-                        android:layout_below="@+id/warranty4"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="55dp"
-                        android:text="@string/u2022_detailed_issue_diagnosis_with_same_day_resolution"
-                        android:textColor="@color/black"
-                        android:textSize="10sp" />
-
-                    <TextView
-                        android:id="@+id/ac_bullet8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="15dp"
-                        android:layout_below="@+id/warranty4"
-                        android:layout_marginStart="12dp"
-                        android:layout_marginTop="90dp"
-                        android:text="\u2022 Visit charges of Rs.300 will be adjusted in the final bill"
+                        android:layout_toRightOf="@+id/price_g3"
+                        android:text="600"
                         android:textColor="@color/black"
                         android:textSize="10sp" />
 
                     <Button
-                        android:id="@+id/add_btn_ac4"
+                        android:id="@+id/min3"
                         android:layout_width="38dp"
                         android:layout_height="22dp"
                         android:layout_marginStart="328dp"
                         android:layout_marginTop="110dp"
                         android:background="@color/white"
-                        android:text="@string/add1"
+                        android:text="-"
                         android:textAllCaps="false"
                         android:textColor="#6E4CCD"
                         android:textSize="16sp"
                         tools:ignore="TouchTargetSizeCheck" />
 
                 </RelativeLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/linear_ac2"
-                android:layout_below="@+id/linear_ac"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="15dp"
-                android:layout_alignParentBottom="true"
-                >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/expected_price_rs"
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:id="@+id/expected_1"
-                    android:textAlignment="center"
-                    android:layout_marginStart="12dp"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:id="@+id/total_1"
-                    android:textAlignment="center"
-                    />
 
             </LinearLayout>
+
 
             <Button
                 android:id="@+id/btn_pay_1"
                 android:layout_width="wrap_content"
                 android:layout_height="45dp"
                 android:layout_below="@+id/linear_ac"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="7dp"
-                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
                 android:backgroundTint="#2940BBD6"
                 android:text="Pay"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 tools:ignore="TouchTargetSizeCheck"
-                android:layout_alignParentBottom="true"/>
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                />
         </RelativeLayout>
 
     </ScrollView>
