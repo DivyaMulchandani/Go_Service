@@ -32,6 +32,7 @@ public class FridgeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a1;
                 txt.setText(res.toString());
+                btadd1.setVisibility(View.INVISIBLE);
             }
         });
     }

@@ -90,7 +90,7 @@ public class ProfileFragment extends Fragment {
 
             String name =userprofile.toString();
             String email = user.getCurrentUser().getEmail();
-            profileName.setText(name);
+            //profileName.setText(name);
             profileEmail.setText(email);
             //Log.i("hi", "onCreateView: "+name);
         }else {

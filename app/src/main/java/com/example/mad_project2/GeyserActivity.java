@@ -18,8 +18,8 @@ public class GeyserActivity extends AppCompatActivity {
         setContentView(R.layout.activity_geyser);
 
         btadd1 = findViewById(R.id.add_btn_g1);
-        btadd2 = findViewById(R.id.add_btn_g1);
-        btadd3 = findViewById(R.id.add_btn_g1);
+        btadd2 = findViewById(R.id.add_btn_g2);
+        btadd3 = findViewById(R.id.add_btn_g3);
 
         txt1 = findViewById(R.id.price_rate_g1);
         txt2 = findViewById(R.id.price_rate_g2);
@@ -40,6 +40,7 @@ public class GeyserActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a1;
                 txt.setText(res.toString());
+                btadd1.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -48,14 +49,16 @@ public class GeyserActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a2;
                 txt.setText(res.toString());
+                btadd2.setVisibility(View.INVISIBLE);
             }
         });
 
         btadd3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                res = res+a2;
+                res = res+a3;
                 txt.setText(res.toString());
+                btadd3.setVisibility(View.INVISIBLE);
             }
         });
 

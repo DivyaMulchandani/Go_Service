@@ -41,6 +41,7 @@ public class WashingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a1;
                 txt.setText(res.toString());
+                btadd1.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -49,6 +50,7 @@ public class WashingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a2;
                 txt.setText(res.toString());
+                btadd2.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -57,6 +59,7 @@ public class WashingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a2;
                 txt.setText(res.toString());
+                btadd3.setVisibility(View.INVISIBLE);
             }
         });
     }

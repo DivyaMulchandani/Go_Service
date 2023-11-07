@@ -143,8 +143,8 @@
 
                 <Button
                     android:id="@+id/add_btn_ac1"
-                    android:layout_width="38dp"
-                    android:layout_height="22dp"
+                    android:layout_width="32dp"
+                    android:layout_height="17dp"
                     android:layout_marginStart="328dp"
                     android:layout_marginTop="110dp"
                     android:background="@color/white"
@@ -152,6 +152,7 @@
                     android:textAllCaps="false"
                     android:textColor="#6E4CCD"
                     android:textSize="16sp"
+                    android:visibility="visible"
                     tools:ignore="TouchTargetSizeCheck" />
 
             </RelativeLayout>
@@ -266,6 +267,7 @@
                     android:textAllCaps="false"
                     android:textColor="#6E4CCD"
                     android:textSize="16sp"
+                    android:visibility="visible"
                     tools:ignore="TouchTargetSizeCheck" />
 
             </RelativeLayout>
@@ -302,7 +304,9 @@
                     android:layout_marginStart="302dp"
                     android:layout_marginTop="30dp"
                     android:contentDescription="@string/xyz"
-                    android:src="@drawable/service" />
+                    android:src="@drawable/service"
+
+                    />
 
                 <ImageView
                     android:id="@+id/star3"
@@ -391,6 +395,7 @@
                     android:textAllCaps="false"
                     android:textColor="#6E4CCD"
                     android:textSize="16sp"
+                    android:visibility="visible"
                     tools:ignore="TouchTargetSizeCheck" />
 
             </RelativeLayout>
@@ -516,44 +521,59 @@
                     android:textAllCaps="false"
                     android:textColor="#6E4CCD"
                     android:textSize="16sp"
+                    android:visibility="visible"
                     tools:ignore="TouchTargetSizeCheck" />
 
             </RelativeLayout>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/linear_ac2"
-            android:layout_below="@+id/linear_ac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linear_ac"
             android:layout_alignParentBottom="true"
-            >
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/expected_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/expected_price_rs"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:id="@+id/expected_1"
                 android:textAlignment="center"
                 android:layout_marginStart="12dp"
-                />
+                 />
 
             <TextView
+                android:id="@+id/total_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textColor="@color/black"
-                android:textSize="25sp"
-                android:id="@+id/total_1"
                 android:textAlignment="center"
-                />
+                android:textColor="@color/black"
+                android:textSize="25sp" />
 
         </LinearLayout>
 
+
+        <Button
+            android:id="@+id/btn_pay_1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_below="@+id/linear_ac"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#2940BBD6"
+            android:text="Pay"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
     </RelativeLayout>
 
 

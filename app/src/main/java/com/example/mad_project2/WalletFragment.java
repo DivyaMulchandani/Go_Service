@@ -1,10 +1,12 @@
 package com.example.mad_project2;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.Gravity;
@@ -18,11 +20,14 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
+
 
 public class WalletFragment extends Fragment {
 
     View view;
-    ImageButton plus_button;
+    ImageButton plus_button,Scan,gift;
     RelativeLayout linear_wallet_2;
     Button card,upi;
     TextView some_id;
@@ -38,6 +43,8 @@ public class WalletFragment extends Fragment {
         card = view.findViewById(R.id.debit_and_c);
         upi = view.findViewById(R.id.upi);
         some_id = view.findViewById(R.id.some_id);
+        Scan = view.findViewById(R.id.qr_button);
+        gift = view.findViewById(R.id.gift_button);
 
         Bundle args = getArguments();
         if (args != null) {
@@ -45,6 +52,22 @@ public class WalletFragment extends Fragment {
             // Now, you can use the received data in your fragment
             some_id.setText(receivedInt);
         }
+
+        gift.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity() , ReferAndGetActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Scan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                IntentIntegrator intentIntegrator = new IntentIntegrator(getActivity());
+                intentIntegrator.initiateScan();
+            }
+        });
 
         plus_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +94,20 @@ public class WalletFragment extends Fragment {
         return view;
     }
 
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IntentResult result = IntentIntegrator.parseActivityResult(resultCode, data);
+        String scannedData = result.getContents();
+
+        TextView textView = view.findViewById(R.id.result);
+        textView.setText(scannedData);
+
+        // Uncomment the next line if you want to display the result as a Toast
+        // Toast.makeText(this, scannedData, Toast.LENGTH_LONG).show();
+    }
     public static WalletFragment newInstance(int x) {
         WalletFragment fragment = new WalletFragment();
         Bundle args = new Bundle();

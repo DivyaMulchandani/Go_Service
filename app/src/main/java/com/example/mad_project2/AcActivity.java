@@ -1,6 +1,9 @@
 package com.example.mad_project2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +13,7 @@ import android.widget.TextView;
 
 public class AcActivity extends AppCompatActivity {
 
-    Button btadd1, btadd2, btadd3, btadd4;
+    Button btadd1, btadd2, btadd3, btadd4,pay;
     TextView txt1, txt2, txt3, txt4, txt;
     Integer a1, a2,a3,a4,res=0;
 
@@ -23,6 +26,8 @@ public class AcActivity extends AppCompatActivity {
         btadd2 = findViewById(R.id.add_btn_ac2);
         btadd3 = findViewById(R.id.add_btn_ac3);
         btadd4 = findViewById(R.id.add_btn_ac4);
+
+        pay = findViewById(R.id.btn_pay_1);
 
         txt1 = findViewById(R.id.price_rate1);
         txt2 = findViewById(R.id.price_rate2);
@@ -45,6 +50,7 @@ public class AcActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a1;
                 txt.setText(res.toString());
+                btadd1.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -53,24 +59,41 @@ public class AcActivity extends AppCompatActivity {
             public void onClick(View v) {
                 res = res+a2;
                 txt.setText(res.toString());
+                btadd2.setVisibility(View.INVISIBLE);
             }
         });
 
         btadd3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                res = res+a2;
+                res = res+a3;
                 txt.setText(res.toString());
+                btadd3.setVisibility(View.INVISIBLE);
             }
         });
 
         btadd4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                res = res+a2;
+                res = res+a4;
                 txt.setText(res.toString());
+                btadd4.setVisibility(View.INVISIBLE);
             }
         });
 
+        pay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //replaceFragemt(new WalletFragment());
+            }
+        });
+
+
+    }
+    private void replaceFragemt(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout , fragment);
+        fragmentTransaction.commit();
     }
 }

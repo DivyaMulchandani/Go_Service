@@ -142,7 +142,8 @@
             android:textAllCaps="false"
             android:textColor="#6E4CCD"
             android:textSize="16sp"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck"
+            android:visibility="visible"/>
 
         <LinearLayout
             android:id="@+id/linear_fridge"
