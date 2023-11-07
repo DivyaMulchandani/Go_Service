@@ -17,8 +17,7 @@
         android:fromDegrees="0"
         android:pivotX="50%"
         android:pivotY="50%"
-        android:repeatCount="1"
-        android:repeatMode="reverse"
-        android:toDegrees="180" />
+        android:repeatCount="0"
+        android:toDegrees="360" />
 
 </set>

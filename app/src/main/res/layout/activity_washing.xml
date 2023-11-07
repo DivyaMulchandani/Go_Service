@@ -414,7 +414,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/linear_wm1"
             android:layout_marginTop="15dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <TextView
                 android:id="@+id/expected_3"
@@ -424,7 +425,8 @@
                 android:text="@string/expected_price_rs"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="25sp" />
+                android:textSize="20sp"
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/total_3"
@@ -436,20 +438,6 @@
                 android:textSize="25sp" />
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/btn_pay_3"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_below="@+id/linear_wm1"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="20dp"
-            android:backgroundTint="#2940BBD6"
-            android:text="Pay"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            tools:ignore="TouchTargetSizeCheck" />
 
     </RelativeLayout>
 
