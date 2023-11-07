@@ -559,21 +559,6 @@
 
         </LinearLayout>
 
-
-        <Button
-            android:id="@+id/btn_pay_1"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:layout_below="@+id/linear_ac"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="7dp"
-            android:layout_marginRight="20dp"
-            android:backgroundTint="#2940BBD6"
-            android:text="Pay"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            tools:ignore="TouchTargetSizeCheck" />
     </RelativeLayout>
 
 

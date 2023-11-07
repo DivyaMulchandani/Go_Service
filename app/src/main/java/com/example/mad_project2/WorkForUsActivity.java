@@ -36,7 +36,7 @@ public class WorkForUsActivity extends AppCompatActivity {
 
         final Dialog dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //dialog.setContentView(R.layout.popup_new_address);
+        dialog.setContentView(R.layout.popup_join_us);
 
         dialog.show();
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.WRAP_CONTENT);

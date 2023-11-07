@@ -139,5 +139,9 @@
     <string name="_3_months_warranty">3 MONTHS WARRANTY</string>
     <string name="includes_thorough_cleaning_and_descaling_of_geyser">• Includes thorough cleaning and descaling of geyser</string>
     <string name="leads_to_faster_heating_and_improve_machine_life">• Leads to faster heating and improve machine life</string>
+    <string name="join_us">JOIN US</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="submit">SUBMIT</string>
 
 </resources>
