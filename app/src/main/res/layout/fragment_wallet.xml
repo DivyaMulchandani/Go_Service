@@ -40,13 +40,13 @@
                 android:src="@drawable/rupee" />
 
             <TextView
-                android:id="@+id/some_id"
+                android:id="@+id/someid"
                 android:layout_width="26dp"
                 android:layout_height="16dp"
                 android:layout_marginLeft="2dp"
                 android:layout_marginTop="47dp"
                 android:layout_toRightOf="@+id/rupee"
-                android:text="@string/amount"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="13sp" />
 
@@ -62,7 +62,7 @@
                 android:id="@+id/qr_button"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_below="@id/some_id"
+                android:layout_below="@id/someid"
                 android:layout_marginLeft="31dp"
                 android:layout_marginTop="43dp"
                 android:background="@drawable/transparent_bg"

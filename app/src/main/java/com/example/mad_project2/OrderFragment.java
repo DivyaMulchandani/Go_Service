@@ -59,6 +59,14 @@ public class OrderFragment extends Fragment {
             public void onClick(View v) {
                 // Create new fragment and transaction
                 Fragment newFragment = new WalletFragment();
+
+                Bundle bundle = new Bundle();
+                int membershipId = 1700; // Replace with the actual int value
+                bundle.putInt("membershipId", membershipId);
+
+                // Set the arguments for the fragment
+                newFragment.setArguments(bundle);
+
                 // consider using Java coding conventions (upper first char class names!!!)
                 FragmentTransaction transaction = getFragmentManager().beginTransaction();
 

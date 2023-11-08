@@ -81,12 +81,6 @@ public class AcActivity extends AppCompatActivity {
             }
         });
 
-        pay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //replaceFragemt(new WalletFragment());
-            }
-        });
 
 
     }

@@ -45,6 +45,13 @@ public class mainlayout extends AppCompatActivity {
 //        replaceFragemt(walletFragment);
 //    }
     private void replaceFragemt(Fragment fragment){
+        Bundle bundle = new Bundle();
+        int membershipId = 100; // Replace with the actual int value
+        bundle.putInt("membershipId", membershipId);
+
+        // Set the arguments for the fragment
+        fragment.setArguments(bundle);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_layout , fragment);

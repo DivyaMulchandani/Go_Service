@@ -30,7 +30,7 @@ public class WalletFragment extends Fragment {
     ImageButton plus_button,Scan,gift;
     RelativeLayout linear_wallet_2;
     Button card,upi;
-    TextView some_id;
+    TextView rs;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,20 +38,28 @@ public class WalletFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_wallet, container, false);
 
+        Bundle bundle = getArguments();
+        int membershipId = bundle.getInt("membershipId", 999); // 0 is the default value if not found
+
+        String membershipIdString = String.valueOf(membershipId);
+
         plus_button = view.findViewById(R.id.plus_button);
         linear_wallet_2 = view.findViewById(R.id.linear_wallet_2);
         card = view.findViewById(R.id.debit_and_c);
         upi = view.findViewById(R.id.upi);
-        some_id = view.findViewById(R.id.some_id);
+        rs = view.findViewById(R.id.someid);
         Scan = view.findViewById(R.id.qr_button);
         gift = view.findViewById(R.id.gift_button);
 
-        Bundle args = getArguments();
-        if (args != null) {
-            int receivedInt = args.getInt("int");
-            // Now, you can use the received data in your fragment
-            some_id.setText(receivedInt);
-        }
+
+        rs.setText(membershipIdString);
+
+//        Bundle args = getArguments();
+//        if (args != null) {
+//            int receivedInt = args.getInt("int");
+//            // Now, you can use the received data in your fragment
+//            some_id.setText(receivedInt);
+//        }
 
         gift.setOnClickListener(new View.OnClickListener() {
             @Override

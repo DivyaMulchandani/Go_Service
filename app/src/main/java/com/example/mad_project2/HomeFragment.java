@@ -19,6 +19,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +30,7 @@ public class HomeFragment extends Fragment {
     ImageView profile,gift;
     ImageButton ac,refrigerator,geyser,washingMachine;
     View view;
+    TextView home;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,8 +44,18 @@ public class HomeFragment extends Fragment {
         geyser = view.findViewById(R.id.img_button_5);
         washingMachine = view.findViewById(R.id.img_button_3);
 
+        home = view.findViewById(R.id.home);
+
         gift = view.findViewById(R.id.gift);
 
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity() , AddressActivity.class);
+                startActivity(intent);
+            }
+        });
         gift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
